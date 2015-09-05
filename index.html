@@ -28,32 +28,37 @@
 			<div class="site-wrapper-inner">
 
 				<div class="cover-container">
-
+					
+					<!-- Header -->
 					<div class="masthead clearfix">
 						<div class="inner">
 							<h3 class="masthead-brand">Nonemoticoner</h3>
 							<nav>
 								<ul class="nav masthead-nav">
-									<li id="home" class="active"><a href="#home">Home</a></li>
-									<li id="aboutme"><a href="#aboutme">About Me</a></li>
-									<li id="portfolio"><a href="#portfolio">Portfolio</a></li>
-									<li id="contact"><a href="#contact">Contact</a></li>
+									<li id="home" class="active"><a href="#home"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
+									<li id="aboutme"><a href="#aboutme"><span class="glyphicon glyphicon-user" aria-hidden="true"></span> About Me</a></li>
+									<li id="portfolio"><a href="#portfolio"><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span> Portfolio</a></li>
+									<li id="contact"><a href="#contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
 								</ul>
 							</nav>
 						</div>
 					</div>
 
-					<div class="inner cover">
+					<!-- Content -->
+					<div id="da-content" class="inner cover">
+						<img src="img/logo-cloudf450x284.png" alt="Cloud of my interests" class="img-responsive center-block" title="Cloud of my interests">
 						<h1 class="cover-heading">|N~</h1>
-						<p class="lead">This page will be filled with content in a very near time :)</p>
+						<p class="lead">Welcome to my webpage. I'm glad you're here :)</p>
 						<p class="lead">
-							<a href="#" class="btn btn-lg btn-default">Stay tuned!</a>
+							<a href="#" class="btn btn-lg btn-default">Quickly! Use some nav buttons!</a>
 						</p>
 					</div>
-
+					
+					<!-- Footer -->
 					<div class="mastfoot">
 						<div class="inner">
-							<p>Cover template for <a href="http://getbootstrap.com">Bootstrap</a>, by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+							<!-- Cover template for Bootstrap</a>, originally designed by @mdo</a>. Redesigned by Nonemoticoner -->
+							<div class="text-right" style="color: white"><small>© 2015 Nonemoticoner</small></div>
 						</div>
 					</div>
 
@@ -62,12 +67,34 @@
 			</div>
 
 		</div>
+		
+		<!-- ================================================ -->
+		<!-- Templates -->
+		<script id="homeTemplate" type="text/x-handlebars-template">
+			<img src="img/logo-cloudf450x284.png" alt="{{img.alt}}" class="img-responsive center-block" title="{{img.title}}">
+			<h1 class="cover-heading">{{h1}}</h1>
+			<p class="lead">{{p1}}</p>
+			<p class="lead">
+				<a href="{{button.href}}" class="btn btn-lg btn-default">{{button.text}}</a>
+			</p>
+		</script>
 
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
+		<script id="aboutmeTemplate" type="text/x-handlebars-template">
+			// ...
+		</script>
+
+		<script id="portfolioTemplate" type="text/x-handlebars-template">
+			// ...
+		</script>
+
+		<script id="contactTemplate" type="text/x-handlebars-template">
+			// ...
+		</script>
+
+		<!-- Libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<script src="js/handlebars-v4.0.2.js"></script>
 		<script src="js/script.js"></script>
 	</body>
 </html>

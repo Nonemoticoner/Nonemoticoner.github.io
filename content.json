@@ -1,6 +1,16 @@
 {
 	"home": {
-		
+		"img": {
+			"url": "img/logo-cloudf450x284.png",
+			"alt": "Cloud of my interests",
+			"title": "Cloud of my interests"
+		},
+		"h1": "|N~",
+		"p1": "Welcome to my webpage. I'm glad you're here :)",
+		"button": {
+			"text": "Quickly! Use some nav buttons!",
+			"href": "#"
+		}
 	},
 
 	"aboutme": {

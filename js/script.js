@@ -39,26 +39,27 @@
 	$('li#home').on('click', function (e) {
 		setActive("home");
 
-		// content emerge
-		// ...
+		// template execution
+		var template = Handlebars.compile( $("#homeTemplate").html() );
+		$("div#da-content").empty().append( template(content.home) );
 	});
 	$('li#aboutme').on('click', function (e) {
 		setActive("aboutme");
 
-		// content emerge
-		// ...
+		var template = Handlebars.compile( $("#aboutmeTemplate").html() );
+		$("div#da-content").empty().append( template(content.aboutme) );
 	});
 	$('li#portfolio').on('click', function (e) {
 		setActive("portfolio");
 
-		// content emerge
-		// ...
+		var template = Handlebars.compile( $("#portfolioTemplate").html() );
+		$("div#da-content").empty().append( template(content.portfolio) );
 	});
 	$('li#contact').on('click', function (e) {
 		setActive("contact");
 
-		// content emerge
-		// ...
+		var template = Handlebars.compile( $("#contactTemplate").html() );
+		$("div#da-content").empty().append( template(content.contact) );
 	});
 
 	

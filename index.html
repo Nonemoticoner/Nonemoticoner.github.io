@@ -66,7 +66,7 @@
 		<!-- ================================================ -->
 		<!-- Templates -->
 		<script id="homeTemplate" type="text/x-handlebars-template">
-			<img src="img/logo-cloudf450x284.png" alt="{{img.alt}}" class="img-responsive center-block" title="{{img.title}}">
+			<img src="{{img.url}}" alt="{{img.alt}}" class="img-responsive center-block" title="{{img.title}}">
 			<h1 class="cover-heading">{{h1}}</h1>
 			<p class="lead">{{p1}}</p>
 			<p class="lead">
@@ -79,7 +79,23 @@
 		</script>
 
 		<script id="portfolioTemplate" type="text/x-handlebars-template">
-			// ...
+			<h3>Some of my projects:</h3>
+			<div class="row">
+				{{#each projects}}
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<div class="thumbnail">
+						<img src="{{thumbnail}}" alt="">
+						<div class="caption">
+							<h3>{{name}}</h3>
+							<p>{{description}}</p>
+							<p><a href="{{url}}" target="_blank" class="label label-default">See details <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a></p>
+						</div>
+					</div>
+				</div>
+				{{/each}}
+			</div>
+			<h4>View <a href="https://github.com/Nonemoticoner?tab=repositories" target="_blank" class="label label-default">my GitHub profile <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a> to see more repositiories.</h4>
+
 		</script>
 
 		<script id="contactTemplate" type="text/x-handlebars-template">

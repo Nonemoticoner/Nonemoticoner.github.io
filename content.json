@@ -14,11 +14,19 @@
 	},
 
 	"aboutme": {
-
+		"pic": "",
+		"text": ""
 	},
 
 	"portfolio": {
-
+		"projects": [
+			{
+				"name": "Battleship",
+				"description": "A small web application of commonly known game Battleship",
+				"url": "https://github.com/Nonemoticoner/Battleship",
+				"thumbnail": "http://placekitten.com/242/200"
+			}
+		]
 	},
 	"contact": {
 		"mail": "nonemoticoner@gmail.com",

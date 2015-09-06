@@ -27,8 +27,28 @@
 			if( (status >= 200 && status < 300) || status === 304 ){
 				content = JSON.parse(xhr.responseText);
 				
-				// appending content to html
-				// ...
+				// Set expected content from hash
+				switch(hash){
+					case "home":
+						var template = Handlebars.compile( $("#homeTemplate").html() );
+						$("div#da-content").empty().append( template(content.home) );
+						break;
+					case "aboutme":
+						var template = Handlebars.compile( $("#aboutmeTemplate").html() );
+						$("div#da-content").empty().append( template(content.aboutme) );
+						break;
+					case "portfolio":
+						var template = Handlebars.compile( $("#portfolioTemplate").html() );
+						$("div#da-content").empty().append( template(content.portfolio) );
+						break;
+					case "contact":
+						var template = Handlebars.compile( $("#contactTemplate").html() );
+						$("div#da-content").empty().append( template(content.contact) );
+						break;
+					default:
+						var template = Handlebars.compile( $("#homeTemplate").html() );
+						$("div#da-content").empty().append( template(content.home) );
+				}
 			}
 		}
 	};

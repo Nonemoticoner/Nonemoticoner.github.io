@@ -8,7 +8,7 @@
 		"h1": "|N~",
 		"p1": "Welcome to my webpage. I'm glad you're here :)",
 		"button": {
-			"text": "Do magic!",
+			"text": "Do the magic!",
 			"href": "#"
 		}
 	},
@@ -22,9 +22,14 @@
 		"projects": [
 			{
 				"name": "Battleship",
-				"description": "A small web application of commonly known game Battleship",
+				"description": "A small web application of commonly known game Battleship with multiplayer.",
 				"url": "https://github.com/Nonemoticoner/Battleship",
-				"thumbnail": "http://placekitten.com/242/200"
+				"thumbnail": "img/thumbnails/battleship.png"
+			},{
+				"name": "password-creator",
+				"description": "A Node module for creating randomized passwords from chosen set of signs.",
+				"url": "https://github.com/Nonemoticoner/password-creator",
+				"thumbnail": "img/thumbnails/npm.png"
 			}
 		]
 	},

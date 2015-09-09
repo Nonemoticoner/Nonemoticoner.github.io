@@ -98,17 +98,28 @@
 				{{/each}}
 			</div>
 			<h4>View <a href="https://github.com/Nonemoticoner?tab=repositories" target="_blank" class="label label-default">my GitHub profile <span class="glyphicon glyphicon-link" aria-hidden="true"></span></a> to see more repositiories.</h4>
-
 		</script>
 
 		<script id="contactTemplate" type="text/x-handlebars-template">
-			// ...
+			<div class="row">
+				{{#each contacts}}
+				<div class="col-xs-12 col-sm-4 col-md-4">
+					<a href="{{href}}" target="_blank">
+					<img src="{{img}}" alt="{{name}} logo">
+					<h3>{{name}}</h3>
+					<p>{{value}}</p>
+					</a>
+				</div>
+				{{/each}}
+			</div>
 		</script>
 
 		<!-- Libraries -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 		<script src="js/handlebars-v4.0.2.js"></script>
+
+		<!-- My Scripts -->
 		<script src="js/script.js"></script>
 		<script src="js/animate.js"></script>
 	</body>

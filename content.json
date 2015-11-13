@@ -26,10 +26,15 @@
 				"description": "A small web application of commonly known game Battleship with multiplayer.",
 				"url": "https://github.com/Nonemoticoner/Battleship",
 				"thumbnail": "img/thumbnails/battleship.png"
-			},{
+			}, {
 				"name": "password-creator",
 				"description": "A Node module for creating randomized passwords from chosen set of signs.",
 				"url": "https://github.com/Nonemoticoner/password-creator",
+				"thumbnail": "img/thumbnails/npm.png"
+			}, {
+				"name": "braille",
+				"description": " A Node module for converting text to Braille alphabet.",
+				"url": "https://github.com/Nonemoticoner/braille",
 				"thumbnail": "img/thumbnails/npm.png"
 			}
 		]
